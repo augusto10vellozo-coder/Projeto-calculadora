@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Calculadora online simples, rápida e gratuita."
+    >
+
+    <title>Calculadora Online</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <section class="calculadora" aria-label="Calculadora">
+
+            <header class="cabecalho">
+
+                <div>
+                    <h1>Calculadora</h1>
+                    <p>Calculadora online</p>
+                </div>
+
+                <button
+                    id="tema"
+                    class="botao-tema"
+                    aria-label="Alternar modo escuro"
+                >
+                    🌙
+                </button>
+
+            </header>
+
+
+            <div
+                class="visor"
+                id="visor"
+                aria-live="polite"
+            >
+                0
+            </div>
+
+
+            <div class="botoes">
+
+                <button
+                    class="botao botao-funcao"
+                    data-acao="limpar"
+                >
+                    AC
+                </button>
+
+                <button
+                    class="botao botao-funcao"
+                    data-acao="apagar"
+                >
+                    ⌫
+                </button>
+
+                <button
+                    class="botao botao-funcao"
+                    data-acao="porcentagem"
+                >
+                    %
+                </button>
+
+                <button
+                    class="botao botao-operador"
+                    data-operador="/"
+                >
+                    ÷
+                </button>
+
+
+                <button class="botao" data-numero="7">
+                    7
+                </button>
+
+                <button class="botao" data-numero="8">
+                    8
+                </button>
+
+                <button class="botao" data-numero="9">
+                    9
+                </button>
+
+                <button
+                    class="botao botao-operador"
+                    data-operador="*"
+                >
+                    ×
+                </button>
+
+
+                <button class="botao" data-numero="4">
+                    4
+                </button>
+
+                <button class="botao" data-numero="5">
+                    5
+                </button>
+
+                <button class="botao" data-numero="6">
+                    6
+                </button>
+
+                <button
+                    class="botao botao-operador"
+                    data-operador="-"
+                >
+                    −
+                </button>
+
+
+                <button class="botao" data-numero="1">
+                    1
+                </button>
+
+                <button class="botao" data-numero="2">
+                    2
+                </button>
+
+                <button class="botao" data-numero="3">
+                    3
+                </button>
+
+                <button
+                    class="botao botao-operador"
+                    data-operador="+"
+                >
+                    +
+                </button>
+
+
+                <button
+                    class="botao botao-zero"
+                    data-numero="0"
+                >
+                    0
+                </button>
+
+                <button class="botao" data-numero=".">
+                    ,
+                </button>
+
+                <button
+                    class="botao botao-igual"
+                    data-acao="resultado"
+                >
+                    =
+                </button>
+
+            </div>
+
+
+            <section class="historico">
+
+                <div class="historico-cabecalho">
+
+                    <h2>Histórico</h2>
+
+                    <button id="limpar-historico">
+                        Limpar
+                    </button>
+
+                </div>
+
+                <ul id="lista-historico">
+                    <!-- Histórico criado pelo JavaScript -->
+                </ul>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
